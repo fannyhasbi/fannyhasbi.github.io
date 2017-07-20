@@ -56,6 +56,21 @@ h4.handwrite {
   font-size: 115%;
   font-family: 'Cardo', serif;
 }
+.progress-heading {
+  margin-bottom: 10px;
+}
+.progress-bar-custom-1 {
+  background-color: #247BA0;
+}
+.progress-bar-custom-2 {
+  background-color: #418fb1;
+}
+.progress-bar-custom-3 {
+  background-color: #6aadca;
+}
+.progress-bar-custom-4 {
+  background-color: #0a678f;
+}
 @media(max-width: 1000px){
   .container-fluid {
     padding: 20px 30px;
