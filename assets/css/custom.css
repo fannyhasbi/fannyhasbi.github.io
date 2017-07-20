@@ -9,9 +9,13 @@
 }
 .container-fluid {
   padding: 60px 100px;
+  text-align: left;
 }
 #header a {
   padding: 0 5px;
+}
+#header p {
+  font-size: 18px;
 }
 .heading {
   font-family: 'Montserrat', sans-serif;
@@ -51,4 +55,12 @@ h4.handwrite {
 .handwrite {
   font-size: 115%;
   font-family: 'Cardo', serif;
+}
+@media(max-width: 1000px){
+  .container-fluid {
+    padding: 20px 30px;
+  }
+  #about {
+    text-align: justify;
+  }
 }
