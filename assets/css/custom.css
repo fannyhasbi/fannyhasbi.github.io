@@ -49,12 +49,12 @@ h4 {
 .bg-odd {
   background-color: #f6f6f6;
 }
-h4.handwrite {
-  font-size: 150%;
+#about.h4 {
+  /*font-size: 150%;*/
 }
-.handwrite {
-  font-size: 115%;
-  font-family: 'Cardo', serif;
+#about p {
+  font-size: 130%;
+  text-align: justify;
 }
 .progress-heading {
   margin-bottom: 10px;
