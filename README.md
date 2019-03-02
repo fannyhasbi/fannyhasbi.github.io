@@ -1,2 +1,2 @@
-# fannyhasbi.github.io
-File-file yang dibutuhkan untuk membuat website portofolio statis [Fanny Hasbi](http://fannyhasbi.github.io)
+# Fanny Hasbi Portfolio Website
+Feel free to check [fannyhasbi.id](https://fannyhasbi.id).
