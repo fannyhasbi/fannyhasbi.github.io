@@ -3,8 +3,10 @@
 // Fun Encryption by Fanny Hasbi
 // https://github.com
 
+const SECRET = "MTI0LDEzLDgsMywyMiwxMywyNiw2LDk5LDEwOCwxMDksMTI3";
 const KEY = "5AGUSTUS1997";
 const TITLE = "MTAzLDUyLDUxLDYx";
+var btn_comp = $("#magic-button").html();
 
 const FunEncrypt = {
   encrypt: (message, key) => {
@@ -32,16 +34,32 @@ const FunEncrypt = {
   }
 }
 
-var btn_comp = $("#magic-button").html();
-
-$("#magic-button").on("click", (e) => {
+var do_magic = (e) => {
+  e.preventDefault();
   let spinner = '<i class="fa fa-spinner fa-pulse fa-2x fa-fw"></i>';
   $("#magic-button").html(spinner);
-  let message = $("#miracle-word").val();
-  let secret = FunEncrypt.encrypt(message, KEY);
+  
+  setTimeout(() => {
+    let message = $("#miracle-word").val();
+    let secret = FunEncrypt.encrypt(message, KEY);
+  
+    if (secret == SECRET){
+      $(".initial-magic").css("display", "none");
+      $("#magic-success").css("display", "block");
+      $("#magic-success").addClass("animated pulse infinite");
+      $("#special-title").html("Congratulations");
 
-  alert("https://bit.ly/" + secret);
-});
+      // $("#gift-button").prop("href", "https://bit.ly/"+secret);
+      console.log(secret);
+    } else {
+      $(".validate-input").addClass('alert-validate');
+    }
+
+    $("#magic-button").html(btn_comp);
+  }, 1500);
+}
 
 let title = FunEncrypt.decrypt(TITLE, KEY);
-$("#special-title").html(title);
+$("#special-title").html("Hello, " + title);
+
+$("#magic-button").on("click", do_magic);
