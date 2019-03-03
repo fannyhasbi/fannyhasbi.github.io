@@ -49,14 +49,14 @@ var do_magic = (e) => {
       $("#magic-success").addClass("animated pulse infinite");
       $("#special-title").html("Congratulations");
 
-      // $("#gift-button").prop("href", "https://bit.ly/"+secret);
       console.log(secret);
+      $("#gift-button").prop("href", "https://bit.do/"+secret);
     } else {
       $(".validate-input").addClass('alert-validate');
     }
 
     $("#magic-button").html(btn_comp);
-  }, 1500);
+  }, 800);
 }
 
 let title = FunEncrypt.decrypt(TITLE, KEY);
