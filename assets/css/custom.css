@@ -3,3 +3,11 @@
   margin-right: 8px;
   color: inherit;
 }
+
+#about div.columns > div {
+  padding: 80px;
+}
+
+#about p {
+  font-size: 110%;
+}
