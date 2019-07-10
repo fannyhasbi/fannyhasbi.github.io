@@ -5,9 +5,31 @@
 }
 
 #about div.columns > div {
-  padding: 80px;
+  padding: 60px;
 }
 
 #about p {
   font-size: 110%;
+}
+
+#about img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+footer {
+  background-color: #23ce6b;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+footer p {
+  color: #eeeeff;
+  margin: 0;
+}
+footer a {
+  color: #272d2d;
+}
+footer a:visited {
+  color: #676d6d;
 }
