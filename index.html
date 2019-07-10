@@ -38,12 +38,15 @@
   <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre-exp.min.css">
   <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre-icons.min.css">
   <link rel="stylesheet" href="assets/css/custom.css">
+
+  <!-- Script -->
+  <script src="https://cdn.jsdelivr.net/npm/typeit@6.0.3/dist/typeit.min.js"></script>
 </head>
 <body>
   <div class="hero bg-dark">
     <div class="hero-body text-center">
       <h1>Fanny Hasbi</h1>
-      <p><i>Software Engineering and Cyber Security Enthusiast</i></p>
+      <p id="hero-description"></p>
       <div id="link-group">
         <a href="https://www.facebook.com/fannyhasbi" target="_blank" class="link" title="Fanny Hasbi Facebook" rel="dofollow"><i class="fa fa-facebook-square fa-2x"></i></a>
         <a href="https://instagram.com/fannyhasbi" target="_blank" class="link" title="Fanny Hasbi Instagram" rel="dofollow"><i class="fa fa-instagram fa-2x"></i></a>
@@ -61,11 +64,14 @@
       </div>
       <div class="column col-sm-12 col-lg-6">
         <h3 class="text-center text-uppercase">ABOUT ME</h3>
-        <p class="text-justify">
-          I come from Brebes, Indonesia. I am a student of Computer Engineering at Diponegoro University since 2016. I focus on server-side development, and I have experienced in PHP and Javascript with its frameworks. I learned programming since 2014 with Javascript.
+        <p>
+          Hello, my name is Fanny Hasbi. I really love coding!
         </p>
         <p class="text-justify">
-          I have completed several projects from small to large scale. Now, I'm still working on several projects while I am studying new technology. I am really enthusiastic participating in technology events and competitions.
+          I am from Brebes, Indonesia. I am currently a third-year student in COmputer Engineering at Diponegoro University. I focus on server-side development, and experienced in Golang, Javascript, and PHP with its frameworks and technologies. I learned programming since 2013 with Javascript.
+        </p>
+        <p class="text-justify">
+          I've completed several projects from small to large one. Now, while working on several projects, I also like to spend my time learning new technology. I'm very interested in participating technology events and competitions. Also, I really like Capture the Flag and pentesting!
         </p>
       </div>
     </div>
@@ -75,5 +81,22 @@
     <p class="text-center">Made with &hearts; by me, <a href="https://github.com/fannyhasbi" title="Fanny Hasbi - Github" rel="dofollow">Fanny Hasbi</a></p>
   </footer>
 
+  <script>
+  new TypeIt('#hero-description', {
+    speed: 50,
+    startDelay: 900
+  })
+  .type('Software Engineering geek')
+  .pause(300)
+  .delete(8)
+  .pause(250)
+  .type(' only')
+  .pause(750)
+  .options({speed: 100, deleteSpeed: 75})
+  .delete(5)
+  .pause(750)
+  .type('ing and Cyber Security Enthusiast')
+  .go();
+  </script>
 </body>
 </html>
