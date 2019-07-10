@@ -18,6 +18,21 @@
   margin-right: auto;
 }
 
+#skills {
+  padding-left: 30px;
+  padding-right: 30px;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+#skills p {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+#skills meter {
+  margin-top: 5px;
+  margin-bottom: 15px;
+}
+
 footer {
   background-color: #23ce6b;
   padding-top: 40px;
