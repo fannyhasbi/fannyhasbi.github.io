@@ -10,7 +10,7 @@ const TITLE = "TITLE+=";
 var btn_comp = $("#magic-button").html();
 
 const FunEncrypt = {
-  encrypt: (message, key) => {
+  encrypt: (msg, key) => {
     var result = [];
     for(let i = 0; i < message.length; i++){
       let a = message.charCodeAt(i);
