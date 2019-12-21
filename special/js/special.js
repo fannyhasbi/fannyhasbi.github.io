@@ -1,11 +1,12 @@
 "use strict";
 
 // Fun Encryption by Fanny Hasbi
-// https://github.com
+// https://github.com/fannyhasbi/fun-encryption
 
-const SECRET = "MTI0LDEzLDgsMywyMiwxMywyNiw2LDk5LDEwOCwxMDksMTI3";
-const KEY = "5AGUSTUS1997";
-const TITLE = "MTAzLDUyLDUxLDYx";
+const SECRET = "y";
+const GREET = "always";
+const KEY = "yyyy";
+const TITLE = "haha";
 var btn_comp = $("#magic-button").html();
 
 const FunEncrypt = {
@@ -44,13 +45,17 @@ var do_magic = (e) => {
     let secret = FunEncrypt.encrypt(message, KEY);
   
     if (secret == SECRET){
+      let greet = FunEncrypt.decrypt(GREET, SECRET);
+      let yoyoy = FunEncrypt.
+
       $(".initial-magic").css("display", "none");
       $("#magic-success").css("display", "block");
-      $("#magic-success").addClass("animated pulse infinite");
-      $("#special-title").html("Congratulations");
+      $("#magic-success").addClass("animated pulse infinite");      
+      $("#special-title").html(greet);
 
-      console.log(secret);
       $("#gift-button").prop("href", "https://bit.do/"+secret);
+
+      console.log(yoyoy);
     } else {
       $(".validate-input").addClass('alert-validate');
     }
