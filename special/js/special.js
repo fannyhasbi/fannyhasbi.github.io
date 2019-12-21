@@ -3,14 +3,14 @@
 // Fun Encryption by Fanny Hasbi
 // https://github.com/fannyhasbi/fun-encryption
 
-const SECRET = "aha";
+const SECRET = "MTAwLDExOSwxMTIsMTIyLDEyMCwxMjQsMTAyLDExNg==";
 const GREET = "CCCCC====";
 const KEY = "Nmuuaab==";
 const TITLE = "TITLE+=";
 var btn_comp = $("#magic-button").html();
 
 const FunEncrypt = {
-  encrypt: (msg, key) => {
+  encrypt: (message, key) => {
     var result = [];
     for(let i = 0; i < message.length; i++){
       let a = message.charCodeAt(i);
