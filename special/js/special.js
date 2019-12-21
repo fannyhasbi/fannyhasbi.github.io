@@ -6,7 +6,7 @@
 const SECRET = "aha";
 const GREET = "CCCCC====";
 const KEY = "Nmuuaab==";
-const TITLE = "haha";
+const TITLE = "TITLE+=";
 var btn_comp = $("#magic-button").html();
 
 const FunEncrypt = {
