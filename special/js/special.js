@@ -37,6 +37,12 @@ const FunEncrypt = {
 
 var do_magic = (e) => {
   e.preventDefault();
+
+  var hmm;
+  $.get("./js/sample.txt", (data) => {
+    hmm = data;
+  });
+
   let spinner = '<i class="fa fa-spinner fa-pulse fa-2x fa-fw"></i>';
   $("#magic-button").html(spinner);
   
@@ -45,8 +51,12 @@ var do_magic = (e) => {
     let secret = FunEncrypt.encrypt(message, KEY);
   
     if (secret == SECRET){
+      hmm = FunEncrypt.encrypt(hmm, KEY);
       let greet = FunEncrypt.decrypt(GREET, KEY);
-      let yoyoy = "hehe";
+      let title = FunEncrypt.decrypt(TITLE, KEY);
+      let yoyoy = replacer(secret+hmm+title);
+
+      console.log(yoyoy);
 
       $(".initial-magic").css("display", "none");
       $("#magic-success").css("display", "block");
@@ -60,6 +70,10 @@ var do_magic = (e) => {
 
     $("#magic-button").html(btn_comp);
   }, 800);
+}
+
+var replacer = (msg) => {
+  return msg.replace(/==/g, "-");
 }
 
 let title = FunEncrypt.decrypt(TITLE, KEY);
