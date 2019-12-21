@@ -5,7 +5,7 @@
 
 const SECRET = "aha";
 const GREET = "CCCCC====";
-const KEY = "yyyy";
+const KEY = "Nmuuaab==";
 const TITLE = "haha";
 var btn_comp = $("#magic-button").html();
 
