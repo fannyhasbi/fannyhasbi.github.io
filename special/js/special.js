@@ -6,7 +6,7 @@
 const SECRET = "MTAwLDExOSwxMTIsMTIyLDEyMCwxMjQsMTAyLDExNg==";
 const GREET = "CCCCC====";
 const KEY = "Nmuuaab==";
-const TITLE = "TITLE+=";
+const TITLE = "MTgsNDcsNDMsNTk=";
 var btn_comp = $("#magic-button").html();
 
 const FunEncrypt = {
