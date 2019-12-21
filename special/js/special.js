@@ -3,7 +3,7 @@
 // Fun Encryption by Fanny Hasbi
 // https://github.com/fannyhasbi/fun-encryption
 
-const SECRET = "y";
+const SECRET = "aha";
 const GREET = "always";
 const KEY = "yyyy";
 const TITLE = "haha";
