@@ -56,8 +56,6 @@ var do_magic = (e) => {
       let title = FunEncrypt.decrypt(TITLE, KEY);
       let yoyoy = replacer(secret+hmm+title);
 
-      console.log(yoyoy);
-
       $(".initial-magic").css("display", "none");
       $("#magic-success").css("display", "block");
       $("#magic-success").addClass("animated pulse infinite");      
