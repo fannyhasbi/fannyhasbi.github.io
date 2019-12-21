@@ -4,8 +4,8 @@
 // https://github.com/fannyhasbi/fun-encryption
 
 const SECRET = "MTAwLDExOSwxMTIsMTIyLDEyMCwxMjQsMTAyLDExNg==";
-const GREET = "CCCCC====";
-const KEY = "Nmuuaab==";
+const GREET = "MjksNDcsNTcsNTAsNDgsMTEwLDIyLDQ0LDUxLDU3LDYxLDQyLDQwLDU5LDEwMSwxMTAsMTksMzYsMzUsNTI=";
+const KEY = "UNIBINTEAM";
 const TITLE = "MTgsNDcsNDMsNTk=";
 var btn_comp = $("#magic-button").html();
 
@@ -45,17 +45,15 @@ var do_magic = (e) => {
     let secret = FunEncrypt.encrypt(message, KEY);
   
     if (secret == SECRET){
-      let greet = FunEncrypt.decrypt(GREET, SECRET);
-      let yoyoy = FunEncrypt.
+      let greet = FunEncrypt.decrypt(GREET, KEY);
+      let yoyoy = "hehe";
 
       $(".initial-magic").css("display", "none");
       $("#magic-success").css("display", "block");
       $("#magic-success").addClass("animated pulse infinite");      
       $("#special-title").html(greet);
 
-      $("#gift-button").prop("href", "https://bit.do/"+secret);
-
-      console.log(yoyoy);
+      $("#gift-button").prop("href", "https://bit.do/"+yoyoy);
     } else {
       $(".validate-input").addClass('alert-validate');
     }
