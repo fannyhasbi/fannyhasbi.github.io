@@ -4,7 +4,7 @@
 // https://github.com/fannyhasbi/fun-encryption
 
 const SECRET = "aha";
-const GREET = "always";
+const GREET = "CCCCC====";
 const KEY = "yyyy";
 const TITLE = "haha";
 var btn_comp = $("#magic-button").html();
