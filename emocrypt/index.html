@@ -12,6 +12,9 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 
+  <!-- Clipboard -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.4/clipboard.min.js"></script>
+
   <!-- SweetAlert2 -->
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
 
@@ -30,9 +33,9 @@
 
   <div class="container">
     <div class="row">
-      <div class="col-6 offset-3">
+      <div class="col-md-6 md-offset-3">
         <form class="form-signin">
-          <img class="mb-4" src="https://getbootstrap.com/docs/4.4/assets/brand/bootstrap-solid.svg" alt="" width="72" height="72">
+          <img class="mb-4" src="https://cdn.shopify.com/s/files/1/1061/1924/products/Zipper-Mouth_Face_Emoji_large.png?v=1571606065" alt="" width="72" height="72">
           <h1 class="h3 mb-3 font-weight-normal">Emoji Encryption</h1>
           <label for="message" class="sr-only">Message</label>
           <input type="text" id="message" class="form-control" placeholder="Message" required>
@@ -40,8 +43,9 @@
           <input type="text" id="key" class="form-control mb-3" placeholder="Secret key" required>
           
           <button class="btn btn-lg btn-success btn-block" type="button" onclick="encrypt()">Encrypt</button>
+          <button class="btn btn-lg btn-secondary btn-block" type="button" onclick="decrypt()">Decrypt</button>
 
-          <p class="mt-5 mb-3 text-muted">&copy; Fanny Hasbi - <a href="https://github.com/fannyhasbi/emocrypt">See the source</a>.</p>
+          <p class="mt-5 mb-3 text-muted">&copy; Fanny Hasbi - <a href="https://github.com/fannyhasbi/emocrypt">See the code</a>.</p>
         </form>
       </div>
     </div>
