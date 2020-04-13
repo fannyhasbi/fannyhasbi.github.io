@@ -21,7 +21,7 @@ function encrypt(){
 
   // content
   let copyBtn = `<button id="copy-btn" class="btn btn-primary" data-clipboard-target="#encryption-result">Copy</button>`;
-  let cipherTextArea = `<textarea id="encryption-result" class="w-100 h-100" readonly>${cipher}</textarea>`;
+  let cipherTextArea = `<textarea id="encryption-result" class="w-100 h-100" rows="7" readonly>${cipher}</textarea>`;
   let html = $('<div>')
     .append(cipherTextArea)
     .append(copyBtn);
@@ -29,8 +29,8 @@ function encrypt(){
   // show the cipher
   Swal.fire({
     icon: 'success',
+    text: '',
     html: html,
-    showCloseButton: true,
     showConfirmButton: false,
   });
 }
