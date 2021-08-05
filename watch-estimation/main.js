@@ -31,42 +31,18 @@ const estimate = (eps, minute_per_eps, spend) => {
 const monthNameSwitcher = (m) => {
   let r = ''
   switch (m) {
-    case 0:
-      r = 'Januari';
-      break;
-    case 1:
-      r = 'Februari';
-      break;
-    case 2:
-      r = 'Maret';
-      break;
-    case 3:
-      r = 'April';
-      break;
-    case 4:
-      r = 'Mei';
-      break;
-    case 5:
-      r = 'Juni';
-      break;
-    case 6:
-      r = 'Juli';
-      break;
-    case 7:
-      r = 'Agustus';
-      break;
-    case 8:
-      r = 'September';
-      break;
-    case 9:
-      r = 'Oktober';
-      break;
-    case 10:
-      r = 'November';
-      break;
-    case 11:
-      r = 'Desember';
-      break;
+    case 0: r = 'Januari'; break;
+    case 1: r = 'Februari'; break;
+    case 2: r = 'Maret'; break;
+    case 3: r = 'April'; break;
+    case 4: r = 'Mei'; break;
+    case 5: r = 'Juni'; break;
+    case 6: r = 'Juli'; break;
+    case 7: r = 'Agustus'; break;
+    case 8: r = 'September'; break;
+    case 9: r = 'Oktober'; break;
+    case 10: r = 'November'; break;
+    case 11: r = 'Desember'; break;
   }
   return r
 }
