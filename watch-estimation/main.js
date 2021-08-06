@@ -59,7 +59,7 @@ const estimate_date = (day_addition) => {
 }
 
 const validate = (spend) => {
-	return !spend.every((val) => val == 0)
+	return !(spend.every((val) => val == 0) || spend.some((val) => val < 0))
 }
 
 const calculate = () => {
